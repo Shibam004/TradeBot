@@ -1,13 +1,13 @@
 # Binance Trading Bot 🤖
 
-[cite_start]A modular and robust Python application designed to interact with the **Binance Futures Testnet (USDT-M)**[cite: 4, 10]. [cite_start]This project was developed as part of a Python Developer Intern assignment to demonstrate clean code architecture, error handling, and dual-interface accessibility[cite: 1, 6].
+A modular and robust Python application designed to interact with the **Binance Futures Testnet (USDT-M)**[cite: 4, 10]. [cite_start]This project was developed as part of a Python Developer Intern assignment to demonstrate clean code architecture, error handling, and dual-interface accessibility.
 
 ## 🚀 Features
-* **Order Placement**: Supports both `MARKET` and `LIMIT` orders[cite: 17, 22].
-* **Dual Side Support**: Execute both `BUY` and `SELL` operations[cite: 18].
-* **Web UI**: Built with Streamlit for a colorful, user-friendly trading experience[cite: 48].
+* **Order Placement**: Supports both `MARKET` and `LIMIT` orders.
+* **Dual Side Support**: Execute both `BUY` and `SELL` operations.
+* **Web UI**: Built with Streamlit for a colorful, user-friendly trading experience.
 * **CLI Access**: Fully functional command-line interface for rapid order execution.
-* **Automatic Logging**: Every request, response, and error is captured in `trading.log`[cite: 31].
+* **Automatic Logging**: Every request, response, and error is captured in `trading.log`.
 * **Security**: Integration with `.env` files to protect sensitive API credentials.
 
 ## 📁 Project Structure
@@ -37,7 +37,7 @@ trading_bot/
    ```bash
    pip install -r requirements.txt
    ```
-3. **Configure Environment**: Create a .env file in the root directory and add your Binance Futures Testnet credentials:
+3. **Configure Environment**: Create a `.env` file in the root directory and add your Binance Futures Testnet credentials:
    ```text
    BINANCE_API_KEY=your_testnet_key
    BINANCE_API_SECRET=your_testnet_secret
@@ -59,7 +59,7 @@ python cli.py --symbol BTCUSDT --side SELL --type LIMIT --qty 0.002 --price 6500
 ```
 
 ## 📝 Assumptions & Constraints
-* **Environment**: Hardcoded to use the Binance Futures Testnet URL: https://testnet.binancefuture.com.
+* **Environment**: Hardcoded to use the Binance Futures Testnet URL: `https://testnet.binancefuture.com`.
 * **Asset Class**: Specifically designed for USDT-M (USDT-Margined) Futures.
 * **Minimum Notional**: Orders must meet the exchange's minimum notional value (typically >$100 on testnet).
 * **Precision**: Trading quantities for BTCUSDT are limited to the asset's specific step size (e.g., 0.001).
